@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DelishDelights</title>
+    <link rel="stylesheet" href="/CSS/register.css" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/jpg">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="logo nav__logo">
+      <a href="/html/index.html">Delish<span>Delights</span></a>
+    </div>
+    <div class="wrapper">
+      <form action="">
+        <h1>Register</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" required />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="User Name" required />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="tel" placeholder="Mobile Number" required />
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Email" required>
+            <i class="Email"></i>
+
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Enter password" id="password" required>
+            <i class="bx bx-hide"  id="icon" onclick="clickon()"></i>
+        </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember me</label>
+          </div>
+          <button type="submit" class="btn">Register </button>
+          <div class="register-link">
+            <p>
+              I agree to terms & conditions
+              <a href="#"> Terms & conditions</a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
