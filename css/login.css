@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root {
+    --primary-color: #fc7f09;
+    --primary-color-light: #fffcfa;
+    --primary-color-dark: #db6e09;
+    --text-dark: #18181b;
+    --text-light: #6b7280;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:var(--primary-color) ;
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+    margin: 20px;
+}
+.logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--primary-color-light);
+}
+.logo a span {
+    color: var(--text-dark);
+}
+.wrapper{
+    width: 420px;
+    background: var(--text-dark);
+    color: var(--primary-color);
+    border-radius: 20px;
+    padding: 30px 40px;
+    border: 2px solid var(--primary-color-light);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.wrapper h1 { 
+    font-size: 36px; 
+    text-align: center;
+} 
+.wrapper .input-box {
+    width: 100%; 
+    position: relative;
+    height: 50px;
+    margin: 30px 0; 
+}
+.input-box input{
+    width: 100%; 
+    height: 100%;
+    background: transparent;
+    padding: 20px 45px 20px 20px ;
+    border: none;
+    border-radius: 40px;
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none; 
+    border: 2px solid var(--primary-color); 
+    border-radius: 40px; 
+}
+::placeholder{
+    color: var(--text-light);
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: var(--text-light);
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 15px;
+}
+.remember-forgot lable input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: var(--primary-color-light);
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--primary-color-light);
+    cursor:pointer;
+    font-size: 16px;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.register-link a{
+    color: var(--primary-color-light);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 7px;
+}
+.register-link a:hover{
+    text-decoration: underline;
+}
